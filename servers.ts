@@ -1,0 +1,40 @@
+import { ServerNode } from '../types/speedtest';
+
+export const SERVER_NODES: ServerNode[] = [
+  {
+    id: 'st-hachihi-primary',
+    name: 'Speedtest Cloud Edge (Hachihi Network Gateway)',
+    provider: 'Hachihi Cloud Infrastructure',
+    city: 'Hồ Chí Minh & Regional Gateway',
+    country: 'Việt Nam',
+    countryCode: 'VN',
+    pingEstimate: 15,
+    type: 'local',
+    endpoint: '/api/speedtest',
+    host: typeof window !== 'undefined' ? window.location.host : 'hachihi.vn',
+  },
+  {
+    id: 'st-hachihi-multithread',
+    name: 'Speedtest High-Throughput Node (Đa Luồng Băng Thông Cao)',
+    provider: 'Hachihi Telecom Cluster',
+    city: 'Hà Nội & TP.HCM Core',
+    country: 'Việt Nam',
+    countryCode: 'VN',
+    pingEstimate: 18,
+    type: 'cdn',
+    endpoint: '/api/speedtest',
+    host: typeof window !== 'undefined' ? window.location.host : 'hachihi.vn',
+  },
+  {
+    id: 'st-hachihi-lowlatency',
+    name: 'Speedtest Low Latency Edge (Tối Ưu Độ Trễ Thấp)',
+    provider: 'Hachihi Edge CDN',
+    city: 'Đà Nẵng & Trung Chuyển',
+    country: 'Việt Nam',
+    countryCode: 'VN',
+    pingEstimate: 12,
+    type: 'cdn',
+    endpoint: '/api/speedtest',
+    host: typeof window !== 'undefined' ? window.location.host : 'hachihi.vn',
+  },
+];

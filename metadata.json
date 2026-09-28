@@ -1,0 +1,8 @@
+{
+  "name": "hch speedtest",
+  "description": "Hệ thống đo lường tốc độ mạng và độ trễ Internet chuyên nghiệp hơn Speedtest: kiểm tra Download/Upload đa luồng, Ping, Jitter, Bufferbloat, Packet Loss và đánh giá chuẩn Game/Stream/Họp trực tuyến.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
